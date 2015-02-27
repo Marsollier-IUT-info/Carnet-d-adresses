@@ -39,7 +39,11 @@ public class Main
 					System.out.println("Entrer l'identifiant de l'entree a consulter :");
 					int identifiant=scanner.nextInt();
 					scanner.nextLine();
-					carnetDAdresses.vueEntree(carnetDAdresses.getEntreeByIdentifiant(identifiant));
+					Entree entree=carnetDAdresses.getEntreeByIdentifiant(identifiant);
+					if(entree==null)
+						System.out.println("Aucune entree n'est associee a cet identifiant.");
+					else
+						carnetDAdresses.vueEntree(entree);
 					break;
 				case 3:
 					System.out.println("Nom :");
@@ -56,34 +60,44 @@ public class Main
 					String ville=scanner.nextLine();
 					System.out.println("Pays :");
 					String pays=scanner.nextLine();
-					Entree entree=new Entree(nom,prenom,telephone,rue,codePostal,ville,pays);
-					carnetDAdresses.ajoutEntree(entree);
+					Entree entree0=new Entree(nom,prenom,telephone,rue,codePostal,ville,pays);
+					carnetDAdresses.ajoutEntree(entree0);
 					break;
 				case 4:
 					System.out.println("Entrer l'identifiant de l'entree a editer :");
 					int identifiant0=scanner.nextInt();
 					scanner.nextLine();
-					System.out.println("Nom :");
-					String nom0=scanner.nextLine();
-					System.out.println("Prenom :");
-					String prenom0=scanner.nextLine();
-					System.out.println("Telephone :");
-					String telephone0=scanner.nextLine();
-					System.out.println("Rue :");
-					String rue0=scanner.nextLine();
-					System.out.println("Code postal :");
-					String codePostal0=scanner.nextLine();
-					System.out.println("Ville :");
-					String ville0=scanner.nextLine();
-					System.out.println("Pays :");
-					String pays0=scanner.nextLine();
-					carnetDAdresses.editionEntree(carnetDAdresses.getEntreeByIdentifiant(identifiant0), nom0, prenom0, telephone0, rue0, codePostal0, ville0, pays0);
+					Entree entree1=carnetDAdresses.getEntreeByIdentifiant(identifiant0);
+					if(entree1==null)
+						System.out.println("Aucune entree n'est associee a cet identifiant.");
+					else
+					{
+						System.out.println("Nom :");
+						String nom0=scanner.nextLine();
+						System.out.println("Prenom :");
+						String prenom0=scanner.nextLine();
+						System.out.println("Telephone :");
+						String telephone0=scanner.nextLine();
+						System.out.println("Rue :");
+						String rue0=scanner.nextLine();
+						System.out.println("Code postal :");
+						String codePostal0=scanner.nextLine();
+						System.out.println("Ville :");
+						String ville0=scanner.nextLine();
+						System.out.println("Pays :");
+						String pays0=scanner.nextLine();
+						carnetDAdresses.editionEntree(entree1, nom0, prenom0, telephone0, rue0, codePostal0, ville0, pays0);
+					}
 					break;
 				case 5:
 					System.out.println("Entrer l'identifiant de l'entree a supprimer :");
 					int identifiant1=scanner.nextInt();
 					scanner.nextLine();
-					carnetDAdresses.suppressionEntree(carnetDAdresses.getEntreeByIdentifiant(identifiant1));
+					Entree entree2=carnetDAdresses.getEntreeByIdentifiant(identifiant1);
+					if(entree2==null)
+						System.out.println("Aucune entree n'est associee a cet identifiant.");
+					else
+						carnetDAdresses.suppressionEntree(entree2);
 					break;
 				default:
 					System.out.println("Instruction invalide.");
