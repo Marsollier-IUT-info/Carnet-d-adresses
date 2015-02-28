@@ -1,0 +1,7 @@
+<html t:type="layout" title="About Carnet_d_adresses"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <p>About Carnet_d_adresses application ...</p>
+
+</html>

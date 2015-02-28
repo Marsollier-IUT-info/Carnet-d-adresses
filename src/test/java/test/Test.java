@@ -1,3 +1,6 @@
+package test;
+import com.group.Carnet_d_adresses.entities.*;
+
 public class Test
 {
 	public static void main(String[]args)

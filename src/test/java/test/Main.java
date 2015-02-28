@@ -1,3 +1,5 @@
+package test;
+import com.group.Carnet_d_adresses.entities.*;
 import java.util.Scanner;
 
 public class Main

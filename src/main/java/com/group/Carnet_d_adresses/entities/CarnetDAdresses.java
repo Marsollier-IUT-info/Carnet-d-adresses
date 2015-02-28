@@ -1,3 +1,4 @@
+package com.group.Carnet_d_adresses.entities;
 import java.util.ArrayList;
 
 public class CarnetDAdresses

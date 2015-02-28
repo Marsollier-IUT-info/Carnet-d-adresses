@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Carnet_d_adresses Application Test Suite" annotations="1.5">
+    <test name="Unit Tests">
+        <packages>
+            <package name="com.group.Carnet_d_adresses"/>
+        </packages>
+    </test>
+</suite>

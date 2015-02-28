@@ -1,3 +1,4 @@
+package com.group.Carnet_d_adresses.entities;
 public class Entree
 {
 	// Nombre entier qui va identifier de maniere unique chaque entree
