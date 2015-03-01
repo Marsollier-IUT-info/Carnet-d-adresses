@@ -1,0 +1,8 @@
+<html t:type="layout" title=""
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    
+    <h1>Listing des entrees.</h1>
+    
+    <t.grid source="entrees"
+		include="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+</html>

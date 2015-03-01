@@ -1,9 +1,17 @@
 <html t:type="layout" title=""
 	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
 	
-	<h1>Carnet d'adresses</h1>
+	<h1>${message:titre}</h1>
+	
+	<p>${message:description}</p>
  
 	<ul>
-	    <li><t:pagelink page="entree/create">Créer une nouvelle entrée</t:pagelink></li>
+	    <li><t:pagelink page="entree/creer">Créer une nouvelle entrée</t:pagelink></li>
+	    
+	    <li><t:pagelink page="entree/listing">Listing des entrées</t:pagelink></li>
+	    <li><t:pagelink page="entree/vue">Vue d'une entrée</t:pagelink></li>
+	    <li><t:pagelink page="entree/ajout">Ajout d'une entrée</t:pagelink></li>
+	    <li><t:pagelink page="entree/edition">Edition d'une entrée</t:pagelink></li>
+	    <li><t:pagelink page="entree/suppression">Suppression d'une entrée</t:pagelink></li>
 	</ul>
 </html>
