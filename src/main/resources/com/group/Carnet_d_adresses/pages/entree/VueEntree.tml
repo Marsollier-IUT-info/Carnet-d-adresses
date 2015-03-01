@@ -1,7 +1,15 @@
 <html t:type="layout" title=""
-    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+    xmlns:p="tapestry:parameter">
     
     <h1>Detail de l'entrée</h1>
     
-    <p>nom: ${nom}</p>
+    <p>
+		<div class="entree-details" t:type="beandisplay" t:object="entree" t:include="nom,prenom,telephone,rue,codePostal,ville,pays"></div>
+	</p>
+	
+	<ul>
+		<li><a href="#" t:type="pagelink" t:page="entree/listing">Retour au carnet d'adresses.</a></li>
+		<li><a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a></li>
+	</ul>
 </html>

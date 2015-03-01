@@ -29,5 +29,4 @@ public class AjoutEntree
 		InstanceCarnetDAdresses.getCarnetDAdresses().ajoutEntree(entree);
 		return index;
 	}
-	
 }

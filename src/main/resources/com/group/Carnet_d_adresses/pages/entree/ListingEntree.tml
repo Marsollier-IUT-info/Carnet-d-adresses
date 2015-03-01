@@ -5,16 +5,16 @@
     <h1>Listing des entrées</h1>
     
     <p>	
-		<div t:type="zone" t:id="result" id="result" class="section result">
+		<div t:type="zone">
 			<table t:type="grid" t:source="entrees" t:inPlace="true" t:include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays" t:add="vue,edition,suppression" t:row="entree"
 				t:reorder="vue,edition,suppression,identifiant,nom,prenom,telephone,rue,codePostal,ville,pays">
 				
 				<p:vueCell>
-					<t:pagelink t:page="entree/vue" t:context="entree">Voir</t:pagelink>
+					<t:pagelink t:page="entree/vue" t:context="entree.identifiant">Voir</t:pagelink>
 				</p:vueCell>
 				
 				<p:editionCell>
-					<t:pagelink t:page="entree/edition" t:context="entree">Editer</t:pagelink>
+					<t:pagelink t:page="entree/edition" t:context="entree.identifiant">Editer</t:pagelink>
 				</p:editionCell>
 				
 				<p:suppressionCell>
@@ -27,7 +27,7 @@
 		</div>
 	</p>
 	
-	<p>
-		<a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a>
-	</p>
+	<ul>
+		<li><a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a></li>
+	</ul>
 </html>
