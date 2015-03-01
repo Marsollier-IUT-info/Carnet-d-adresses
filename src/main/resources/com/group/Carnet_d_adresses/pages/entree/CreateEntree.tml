@@ -1,0 +1,8 @@
+<html t:type="layout" title=""
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    
+    <h1>Créer une nouvelle entrée</h1>
+    
+    <t:beaneditform object="entree" submitlabel="message:validation-label"
+    	reorder="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+</html>

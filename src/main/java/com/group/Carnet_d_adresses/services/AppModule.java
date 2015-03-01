@@ -50,6 +50,9 @@ public class AppModule
         // you can extend this list of locales (it's a comma separated series of locale names;
         // the first locale name is the default when there's no reasonable match).
         configuration.add(SymbolConstants.SUPPORTED_LOCALES, "en");
+        
+        // Set the HMAC pass phrase to secure object data serialized to client
+        configuration.add(SymbolConstants.HMAC_PASSPHRASE, "i5bmU4cgq47YAdD65f9ZW29R3SS2Wyqq");
     }
 
 

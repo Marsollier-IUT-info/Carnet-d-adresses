@@ -17,9 +17,9 @@ public class Test
 		CarnetDAdresses carnetDAdresses=new CarnetDAdresses();
 		
 		// Creation d'entrees.
-		Entree entree0=new Entree(nom,prenom,telephone,rue,codePostal,ville,pays);
-		Entree entree1=new Entree(nom,prenom,telephone,rue,codePostal,ville,pays);
-		Entree entree2=new Entree(nom,prenom,telephone,rue,codePostal,ville,pays);
+		Entree1 entree0=new Entree1(nom,prenom,telephone,rue,codePostal,ville,pays);
+		Entree1 entree1=new Entree1(nom,prenom,telephone,rue,codePostal,ville,pays);
+		Entree1 entree2=new Entree1(nom,prenom,telephone,rue,codePostal,ville,pays);
 		
 		// Ajout des entrees au carnet d'adresses.
 		carnetDAdresses.ajoutEntree(entree0);
