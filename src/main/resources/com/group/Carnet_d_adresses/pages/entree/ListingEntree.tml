@@ -3,6 +3,6 @@
     
     <h1>Listing des entrees.</h1>
     
-    <t.grid source="entrees"
-		include="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+    <t:grid source="entrees"
+		include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays"/>
 </html>

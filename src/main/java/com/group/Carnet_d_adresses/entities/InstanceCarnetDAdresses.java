@@ -1,7 +1,5 @@
 package com.group.Carnet_d_adresses.entities;
 
-import java.util.ArrayList;
-
 public class InstanceCarnetDAdresses
 {
 	/** Instance du carnet d'adresse utilisee par tout le programme. */
