@@ -1,0 +1,7 @@
+<html t:type="layout" title=""
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    
+    <h1>Detail de l'entrée</h1>
+    
+    <p>nom: ${nom}</p>
+</html>

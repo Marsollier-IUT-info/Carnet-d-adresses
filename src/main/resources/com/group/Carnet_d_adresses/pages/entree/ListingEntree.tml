@@ -1,8 +1,19 @@
 <html t:type="layout" title=""
-    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+    xmlns:p="tapestry:parameter">
     
-    <h1>Listing des entrees.</h1>
-    
-    <t:grid source="entrees"
-		include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays"/>
+    <h1>Listing des entrées</h1>
+    	
+	<div t:type="zone" t:id="result" id="result" class="section result">
+		<table t:type="grid" t:source="entrees" t:include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays" t:add="vue,edition,suppression" t:row="currentEntree"
+			t:reorder="vue,edition,suppression,identifiant,nom,prenom,telephone,rue,codePostal,ville,pays">
+			<p:vueCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/vue">Voir</a></p:vueCell>
+			<p:editionCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/edition">Editer</a></p:editionCell>
+			<p:suppressionCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/suppression">Supprimer</a></p:suppressionCell>
+		</table>
+	</div>
+	
+	<p>
+		<a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a>
+	</p>
 </html>
