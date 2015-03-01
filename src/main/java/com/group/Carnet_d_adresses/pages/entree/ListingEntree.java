@@ -25,9 +25,9 @@ public class ListingEntree
 		return InstanceCarnetDAdresses.getCarnetDAdresses().getEntrees();
 	}
 	
-	public void onActionFromSuppression()
+	public void onActionFromSuppression(int entreeIdentifiant)
     {
         InstanceCarnetDAdresses.getCarnetDAdresses().suppressionEntree(
-        		InstanceCarnetDAdresses.getCarnetDAdresses().getEntreeByIdentifiant(0));
+        		InstanceCarnetDAdresses.getCarnetDAdresses().getEntreeByIdentifiant(entreeIdentifiant));
     }
 }
