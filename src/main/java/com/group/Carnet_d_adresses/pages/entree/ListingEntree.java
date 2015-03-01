@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import org.apache.tapestry5.annotations.InjectComponent;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.corelib.components.Zone;
-import org.apache.tapestry5.grid.GridDataSource;
 
 import com.group.Carnet_d_adresses.entities.Entree;
 import com.group.Carnet_d_adresses.entities.InstanceCarnetDAdresses;
@@ -13,13 +12,10 @@ import com.group.Carnet_d_adresses.entities.InstanceCarnetDAdresses;
 public class ListingEntree
 {
 	@Property
-	private Entree currentEntree;
+	private Entree entree;
 	
 	@InjectComponent
     private Zone result;
-	
-	@Property
-    private GridDataSource source;
 	
 	public ArrayList<Entree>getEntrees()
 	{		
@@ -29,8 +25,9 @@ public class ListingEntree
 		return InstanceCarnetDAdresses.getCarnetDAdresses().getEntrees();
 	}
 	
-	Object onAction()
+	public void onActionFromSuppression()
     {
-        return result.getBody();
+        InstanceCarnetDAdresses.getCarnetDAdresses().suppressionEntree(
+        		InstanceCarnetDAdresses.getCarnetDAdresses().getEntreeByIdentifiant(0));
     }
 }

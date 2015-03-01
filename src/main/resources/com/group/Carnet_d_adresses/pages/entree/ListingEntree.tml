@@ -3,15 +3,29 @@
     xmlns:p="tapestry:parameter">
     
     <h1>Listing des entrées</h1>
-    	
-	<div t:type="zone" t:id="result" id="result" class="section result">
-		<table t:type="grid" t:source="entrees" t:include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays" t:add="vue,edition,suppression" t:row="currentEntree"
-			t:reorder="vue,edition,suppression,identifiant,nom,prenom,telephone,rue,codePostal,ville,pays">
-			<p:vueCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/vue">Voir</a></p:vueCell>
-			<p:editionCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/edition">Editer</a></p:editionCell>
-			<p:suppressionCell><a href="#" t:type="pagelink" t:context="currentEntree" t:page="entree/suppression">Supprimer</a></p:suppressionCell>
-		</table>
-	</div>
+    
+    <p>	
+		<div t:type="zone" t:id="result" id="result" class="section result">
+			<table t:type="grid" t:source="entrees" t:inPlace="true" t:include="identifiant,nom,prenom,telephone,rue,codePostal,ville,pays" t:add="vue,edition,suppression" t:row="entree"
+				t:reorder="vue,edition,suppression,identifiant,nom,prenom,telephone,rue,codePostal,ville,pays">
+				
+				<p:vueCell>
+					<t:pagelink t:page="entree/vue" t:context="entree">Voir</t:pagelink>
+				</p:vueCell>
+				
+				<p:editionCell>
+					<t:pagelink t:page="entree/edition" t:context="entree">Editer</t:pagelink>
+				</p:editionCell>
+				
+				<p:suppressionCell>
+					<t:actionlink t:id="suppression" t:context="entree.identifiant">Supprimer</t:actionlink>
+				</p:suppressionCell>
+				
+				<p:empty>Il n'y a aucune entrée dans le carnet d'adresses.</p:empty>
+				
+			</table>
+		</div>
+	</p>
 	
 	<p>
 		<a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a>

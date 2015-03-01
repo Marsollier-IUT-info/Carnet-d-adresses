@@ -3,6 +3,8 @@
     
     <h1>Création d'une nouvelle entrée</h1>
     
-    <t:beaneditform object="formulaireEntree" submitlabel="message:submit-label"
-    	reorder="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+    <p>
+		<t:beaneditform object="formulaireEntree" submitlabel="message:submit-label"
+			reorder="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+    </p>
 </html>
