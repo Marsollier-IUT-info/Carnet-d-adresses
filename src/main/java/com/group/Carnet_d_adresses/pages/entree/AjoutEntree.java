@@ -27,6 +27,7 @@ public class AjoutEntree
 			formulaireEntree.pays);
 		
 		InstanceCarnetDAdresses.getCarnetDAdresses().ajoutEntree(entree);
+		
 		return index;
 	}
 }

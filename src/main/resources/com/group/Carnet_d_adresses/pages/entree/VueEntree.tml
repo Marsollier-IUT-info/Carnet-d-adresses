@@ -1,6 +1,5 @@
 <html t:type="layout" title=""
-    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
-    xmlns:p="tapestry:parameter">
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
     
     <h1>Detail de l'entrée</h1>
     
@@ -9,7 +8,7 @@
 	</p>
 	
 	<ul>
-		<li><a href="#" t:type="pagelink" t:page="entree/listing">Retour au carnet d'adresses.</a></li>
-		<li><a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a></li>
+		<li><t:pagelink t:page="entree/listing">Retour au carnet d'adresses.</t:pagelink></li>
+		<li><t:pagelink t:page="index">Retour au menu principal</t:pagelink></li>
 	</ul>
 </html>

@@ -28,6 +28,6 @@
 	</p>
 	
 	<ul>
-		<li><a href="#" t:type="pagelink" t:page="index">Retour au menu principal</a></li>
+		<li><t:pagelink t:page="index">Retour au menu principal</t:pagelink></li>
 	</ul>
 </html>

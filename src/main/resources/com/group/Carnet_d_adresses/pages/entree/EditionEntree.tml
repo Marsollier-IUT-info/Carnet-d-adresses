@@ -1,0 +1,11 @@
+<html t:type="layout" title=""
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+    xmlns:p="tapestry:parameter">
+    
+    <h1>Edition de l'entrée</h1>
+    
+    <p>
+		<t:beaneditform object="formulaireEntree" submitlabel="message:submit-label"
+			reorder="nom,prenom,telephone,rue,codePostal,ville,pays"/>
+	</p>
+</html>
