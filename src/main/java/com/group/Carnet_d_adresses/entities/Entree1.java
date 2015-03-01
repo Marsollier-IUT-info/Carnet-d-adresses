@@ -1,6 +1,6 @@
 package com.group.Carnet_d_adresses.entities;
 
-public class Entree0
+public class Entree1
 {
 	public String nom;
 	public String prenom;
@@ -9,5 +9,4 @@ public class Entree0
 	public String codePostal;
 	public String ville;
 	public String pays;
-    
 }

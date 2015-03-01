@@ -7,7 +7,7 @@ import com.group.Carnet_d_adresses.entities.InstanceCarnetDAdresses;
 
 public class ListingEntree
 {
-	public ArrayList<Entree> getEntrees()
+	public ArrayList<Entree>getEntrees()
 	{		
 		/** - getEntrees() -> On recupere les entrees
 		 *  - getCarnetDAdresses() -> a partir du carnet d'adresses
